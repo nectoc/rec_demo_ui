@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Movies - Movie Square</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.jag" id="logo"><img src="images/logo1.png" alt=""></a>
+			<ul>
+				<li>
+					
+				</li>
+				<li>
+					
+				</li>
+				<li>
+					<a href="index.jag">Home</a>
+				</li>
+				<li class="selected">
+					<a href="movies.jag">Movies</a>
+					<ul>
+						<li class="selected">
+							<a href="#">Now Showing</a>
+						</li>
+						<li>
+							<a href="#">Comming Soon</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+					<a href="about.jag">About</a>
+				</li>
+				<li>
+					<a href="blog.jag">Blog</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body" class="movies">
+		<h2>Movies</h2>
+		<ul>
+			<li>
+				<a href="movie-details.jag"><img src="images/mi2.jpg" alt=""></a>
+				<h3>Mission Impossible</h3>
+				<p>
+					Blamed for a terrorist attack on the Kremlin, Ethan Hunt (Tom Cruise) and the entire IMF agency are disavowed by the U.S. government, while the president initiates the Ghost Protocol. Forced to go "off the grid" -- left without resources or backup -- Hunt must somehow clear the agency's name and prevent another attack. Complicating matters even more, Ethan must undertake the impossible mission with a group of fellow IMF fugitives whose actual motives are suspect.
+				</p> <br><br>
+				<div id ="radio1">
+					<fieldset class="rating">
+					    <input type="radio" id="star5" name="rating1" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+					    <input type="radio" id="star4" name="rating1" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+					    <input type="radio" id="star3" name="rating1" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+					    <input type="radio" id="star2" name="rating1" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+					    <input type="radio" id="star1" name="rating1" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+					
+					</fieldset>
+					 <button id="ratemovie1" onclick="enterRatesM1()" type="button" value="Submit" style="background-color:red; border: 2px solid yellow ;border-radius: 12px";>Rate it!!!
+				</div>
+				
+			</li>
+			<li>
+				<a href="movie-details.jag"><img src="images/xmen2.jpg" alt=""></a>
+				<h3>X-Men</h3>
+				<p>
+					Convinced that mutants pose a threat to humanity, Dr. Bolivar Trask (Peter Dinklage) develops the Sentinels, enormous robotic weapons that can detect a mutant gene and zero in on that person. In the 21st century, the Sentinels have evolved into highly efficient killing machines. With mutants now facing extinction, Wolverine (Hugh Jackman) volunteers to go back in time and rally the X-Men of the past to help change a pivotal moment in history and thereby save their future.
+				</p><br><br>
+								
+					<div id ="radio2">
+					<fieldset class="rating">
+					    <input type="radio" id="star5-1" name="rating2" value="5" /><label class = "full" for="star5-1" title="Awesome - 5 stars"></label>
+					   
+					    <input type="radio" id="star4-1" name="rating2" value="4" /><label class = "full" for="star4-1" title="Pretty good - 4 stars"></label>
+					    
+					    <input type="radio" id="star3-1" name="rating2" value="3" /><label class = "full" for="star3-1" title="Meh - 3 stars"></label>
+					
+					    <input type="radio" id="star2-1" name="rating2" value="2" /><label class = "full" for="star2-1" title="Kinda bad - 2 stars"></label>
+					  
+					    <input type="radio" id="star1-1" name="rating2" value="1" /><label class = "full" for="star1-1" title="Sucks big time - 1 star"></label>
+					
+					</fieldset>
+					 <button id="ratemovie2" onclick="enterRatesM2()" type="button" value="Submit" style="background-color:red; border: 2px solid yellow ;border-radius: 12px">Rate it!!!
+				</div>
+
+				
+			</li>
+			<li>
+				<a href="movie-details.jag"><img src="images/scarymovie2.jpg" alt=""></a>
+				<h3>Scary Movie</h3>
+				<p>
+					Dim-witted Cindy Campbell (Anna Faris) and her sex-crazed friend, Brenda (Regina Hall), team up with cute-but-clueless Tom Ryan (Craig Bierko) to save the world from a hostile alien invasion, with hints of "War of the Worlds," "Saw II," "Million Dollar Baby" and "The Village." Celebrity cameos include Carmen Electra, Shaquille O'Neal, Dr. Phil McGraw, Bill Pullman, Molly Shannon and Michael Madsen.
+				</p><br><br><br><br>
+				<div id ="radio3">
+					<fieldset class="rating">
+					    <input type="radio" id="star5-2" name="rating3" value="5" /><label class = "full" for="star5-2" title="Awesome - 5 stars"></label>
+					   
+					    <input type="radio" id="star4-2" name="rating3" value="4" /><label class = "full" for="star4-2" title="Pretty good - 4 stars"></label>
+					   
+					    <input type="radio" id="star3-2" name="rating3" value="3" /><label class = "full" for="star3-2" title="Meh - 3 stars"></label>
+			
+					    <input type="radio" id="star2-2" name="rating3" value="2" /><label class = "full" for="star2-2" title="Kinda bad - 2 stars"></label>
+					   
+					    <input type="radio" id="star1-2" name="rating3" value="1" /><label class = "full" for="star1-2" title="Sucks big time - 1 star"></label>
+					   
+					</fieldset>
+					 <button id="ratemovie3" onclick="enterRatesM3()" type="button" value="Submit" style="background-color:red; border: 2px solid yellow ;border-radius: 12px">Rate it!!!
+				</div>
+
+				
+			</li>
+			<li>
+				<a href="movie-details.jag"><img src="images/godzilla2.jpg" alt=""></a>
+				<h3>Godzilla</h3>
+				<p>
+					Ford Brody (Aaron Taylor-Johnson), a Navy bomb expert, has just reunited with his family in San Francisco when he is forced to go to Japan to help his estranged father, Joe (Bryan Cranston). Soon, both men are swept up in an escalating crisis when Godzilla, King of the Monsters, arises from the sea to combat malevolent adversaries that threaten the survival of humanity. The creatures leave colossal destruction in their wake, as they make their way toward their final battleground: San Francisco.
+
+				</p><br>
+
+				<div id ="radio4">
+					<fieldset class="rating">
+					    <input type="radio" id="star5-3" name="rating4" value="5" /><label class = "full" for="star5-3" title="Awesome - 5 stars"></label>
+				
+					    <input type="radio" id="star4-3" name="rating4" value="4" /><label class = "full" for="star4-3" title="Pretty good - 4 stars"></label>
+					   
+
+					    <input type="radio" id="star3-3" name="rating4" value="3" /><label class = "full" for="star3-3" title="Meh - 3 stars"></label>
+					   
+
+					    <input type="radio" id="star2-3" name="rating4" value="2" /><label class = "full" for="star2-3" title="Kinda bad - 2 stars"></label>
+					   
+
+					    <input type="radio" id="star1-3" name="rating4" value="1" /><label class = "full" for="star1-3" title="Sucks big time - 1 star"></label>
+					   
+
+					</fieldset>
+					 <button id="ratemovie1" onclick="enterRatesM4()" type="button" value="Submit" style="background-color:red; border: 2px solid yellow ;border-radius: 12px" >Rate it!!!
+				</div>
+				
+			</li>
+		</ul>
+	</div>
+	<div id="footer">
+		<div>
+			<div>
+				<span>Quick Links</span>
+				<ul>
+					<li>
+						<a href="index.jag">Home</a>
+					</li>
+					
+					<li>
+						<a href="#">Location</a>
+					</li>
+					<li>
+						<a href="movies.jag">Now Showing</a>
+					</li>
+					
+					<li>
+						<a href="about.jag">Contact</a>
+					</li>
+					<li>
+						<a href="movies.jag">Coming Soon</a>
+					</li>
+					
+					<li>
+						<a href="blog.jag">Blog</a>
+					</li>
+				</ul>
+			</div>
+			<div class="section">
+				<span></span>
+				<ul>
+					<li>
+						
+				</ul>
+			</div>
+			<div>
+				<span></span>
+				<p>
+					
+				</p>
+				<form action="index.jag">
+					
+				</form>
+			</div>
+			<p>
+				&#169; 2016 Movie Square
+			</p>
+			<div class="connect">
+				
+			</div>
+		</div>
+	</div>
+
+
+		<script src="js/login.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+
+		var userId = sessionStorage.getItem('userId');	
+		//alert("id:"+userId);
+		var serverUrl = window.location.origin;
+
+
+		$(document).ready(function () {
+  			$("input[name='radio1']").on("change", function () { 
+  		 	alert(this.value);
+			});
+
+		});
+	
+		var latestId;
+
+		//Rate for each movie
+		var rates = [];
+
+		//Movie titles
+		var movies =[];
+
+		latestId = getModelId();
+		console.log("Latest Id :"+latestId);
+
+		//alert(serverUrl)
+		    $.ajax({
+		        type: "GET",
+		        url: serverUrl+"/api/models/"+latestId+"/product-recommendations?user-id="+userId+"&no-of-products=5",
+		        success: function(res) {
+					console.log(res);
+					//var obj = JSON.parse(res);
+					//document.getElementById("myheading").innerHTML =  res; 
+				 	//document.getElementById("nav").innerHTML =  res; 
+					out = res; 
+					
+  			 	    getMovies(res);
+  			 		//getRates();
+  			 		addMovieList();
+					  
+		        },
+		        error: function(res) {
+		            var errorText = res.responseText;
+		            
+		        }
+		    });	
+	 	   	
+		    function getMovies(res){
+
+		    	$.ajax({
+		        url : "movies.txt",
+		        type : "GET",
+		        async: false,
+		        success : function(data) {
+		          
+		        		var lines = data.split("\n");
+		        		var list =[];
+		    			//Split each row using ::
+		    			var j =0;
+		    	   		$.each(lines, function(n, elem) {
+		    	   			//console.log("enter lines");
+		    			var details = elem.split("::");
+
+		    				//alert("Element :"+details[0]);
+		    				for (var i = 0,len = res.length; i < len; i++) {
+		    					if(res[i]==details[0]){
+		    						console.log(j);
+		    						list[j] = details[1];
+		    						//console.log(list[j]);
+		    						//$('#nav').append('<p>'+list[j]+'</p>');
+		    						j++;
+		    						console.log(j);
+		    					}
+		    				}
+
+		    	    	});
+
+		    	    		//alert("list :"+list.length);
+		    				console.log(list);
+		    				for (var k = 0 ,l = list.length; k < l; k++) {
+		    					$('#rec').append('<p>'+list[k]+'</p>');
+		    					
+		    			}
+
+		        },
+		        error: function() {
+		           var errorText = res.responseText;
+		        }
+		     });
+
+		    }
+
+		    function addMovieList(){
+
+		    	var movieList =[];
+
+		    	$.ajax({
+		        url : "movies.txt",
+		        type : "GET",
+		        async: false,
+		        success : function(data) {
+		          
+		        		var lines = data.split("\n");
+		        		var list =[];
+		    			//Split each row using ::
+		    			var j =0;
+		    	   		$.each(lines, function(n, elem) {
+		    				if(n<5) {
+		    					movieList[n] = elem;
+		    					console.log("Movie List :"+movieList[n]);
+		    				}
+
+		    	    	});
+
+		        },
+		        error: function() {
+		           var errorText = res.responseText;
+		        }
+		     });
+
+		    	console.log("get movies :"+movieList);
+		    	return movieList;
+		    }
+
+		function getModelId(){
+			var modelid;
+
+			$.ajax({
+		        type: "GET",
+		        url: serverUrl+"/api/models",
+		        async : false,
+		        success: function(res) {
+					console.log("models :" + res);
+
+  			     var lastModel = res[res.length-1];
+  			     if(lastModel.status=="Complete"){
+  			     	modelid = lastModel.id;
+  			     	console.log("Model :"+modelid);
+  			     }
+					        
+		        },
+		        error: function(res) {
+		            var errorText = res.responseText;
+		            
+		        }
+		    });	
+
+	console.log("ModelID :"+modelid);
+	return modelid;
+}
+
+	//Method to pass data to backend
+	function PostData(movieId,rate){
+
+		//var jsonData = {"event": {"metaData": {},"correlationData": {},"payloadData": '[{"UserID": 2,"MovieID": 2,"Rating":3,"Timestamp": "1452234655"}]'}};
+			var jsonData = '{"UserID": "1","MovieID": "342","Rating":"3","Timestamp": "1452234655"}';
+			jQuery.ajax({
+			 type:"POST",
+		 	 url:"http://10.100.4.112:9767/Demo-CXF-0.0.1-SNAPSHOT/rservice/data/"+userId+"/passData?movieId="+movieId+"&rate="+rate+"&timeStamp=1452234655",
+		 	 contentType: "application/json",
+		  	 data: jsonData,
+		  	 	 success: function(res){//http://10.100.4.112:9763/REC_DEMO_UI-1/index.jag?id=5
+					console.log("success");
+				    },
+		    		  error: function(res){
+					 console.log("Error");
+				    } 	 
+		});
+
+	}
+
+	function enterRatesM1(){
+	  $('input[name="rating1"]:checked').each(function() {
+   				console.log("rate :" + this.value);
+   					rates[0] = this.value;
+   					console.log("rate arr :" + rates[0]);
+
+				});
+	  //PostDataToDas();
+	  PostData(20,rates[0]);
+
+}
+
+	function enterRatesM2(){
+		 $('input[name="rating2"]:checked').each(function() {
+	   				console.log("rate2 :" + this.value);
+	   					rates[1] = this.value;
+					});
+		 PostData(3793,rates[1]);
+	}
+
+	function enterRatesM3(){
+		 $('input[name="rating3"]:checked').each(function() {
+	   				console.log("rate3 :" + this.value);
+	   					rates[2] = this.value;
+					});
+		 PostData(3785,rates[2]);
+	}
+
+	function enterRatesM4(){
+		  $('input[name="rating4"]:checked').each(function() {
+		        	rates[3] = this.value;
+	   				console.log("rate4 :" + this.value);
+					});
+		  PostData(3864,rates[3]);
+
+	}
+
+	function enterRatesM5(){
+		 $('input[name="rate5"]:checked').each(function() {
+					 	rates[4] = this.value;
+	   				console.log("rate5 :" + this.value);
+					});
+	}
+
+
+
+
+
+
+		</script>
+</body>
+</html>
